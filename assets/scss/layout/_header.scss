@@ -1,0 +1,21 @@
+.logo {
+  width: 53px;
+  height: 53px;
+  @include phone {
+    width: 40px;
+    height: 40px;
+  }
+}
+.seach {
+  width: 335px;
+  @include phone {
+    width: 207px;
+  }
+  input::placeholder {
+    font-family: "Noto Sans TC", sans-serif;
+    color: #878787;
+  }
+  input:focus::placeholder {
+    color: $ticket-bg;
+  }
+}

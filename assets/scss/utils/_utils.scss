@@ -1,0 +1,20 @@
+@mixin tab {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+.bdrs-4 {
+  border-radius: 4px;
+}
+.ff-nsst {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.ff-nsft {
+  font-family: "Noto Serif TC", serif;
+}

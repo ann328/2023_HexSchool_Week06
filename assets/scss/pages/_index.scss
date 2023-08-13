@@ -1,0 +1,27 @@
+// * {
+//   outline: 1px solid red;
+// }
+.event_banner {
+  max-height: 518px;
+  object-fit: cover;
+  @include phone {
+    max-height: 350px;
+  }
+}
+.banner_img--title {
+  top: 48px;
+  left: 48px;
+}
+.search_more {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: cover;
+  transition: all 1.2s;
+  &:hover {
+    transform: scale(1.2);
+  }
+  @include phone {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}

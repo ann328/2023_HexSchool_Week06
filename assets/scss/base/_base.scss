@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Yeseva One", cursive;
+  color: $primary;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    color: $other;
+  }
+}
