@@ -15,19 +15,19 @@
   <body class="bg-t">
     <%- include('./layout/header'); -%>
     <div class="container">
-      <div id="banner" class="carousel slide pt-md-6 pt-3 mb-5">
+      <div class="banner carousel slide pt-md-6 pt-3 mb-5" id="banner">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="position-absolute">
-              <h3
-                class="text-white m-0 position-relative banner_img--title fs-md-9 fs-2"
+              <h2
+                class="banner__img--title text-white m-0 position-relative fs-md-9 fs-2"
               >
                 19 MAY 2023
-              </h3>
+              </h2>
             </div>
             <img
               src="../assets/images/event/13.jpg"
-              class="d-block w-100 event_banner"
+              class="banner__event d-block w-100"
               alt="event_img"
             />
 
@@ -68,7 +68,9 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="row grid gy-lg-0 gx-md-4 gy-md-2 gx-2 gy-2 mb-md-5 mb-6">
+      <div
+        class="explore row grid gy-lg-0 gx-md-4 gy-md-2 gx-2 gy-2 mb-md-5 mb-6"
+      >
         <div class="col-lg-2 col-md-4 col-4">
           <div
             class="border border-2 border-black text-center py-md-35 py-20 mb-md-0"
@@ -76,7 +78,7 @@
             <img
               src="../assets/images/cate01.svg"
               alt="part"
-              class="search_more mb-md-7 mb-2"
+              class="explore_＿more--img mb-md-7 mb-2"
             />
             <p class="fs-md-4 fs-6 ff-nsft m-0">演出</p>
           </div>
@@ -88,7 +90,7 @@
             <img
               src="../assets/images/cate02.svg"
               alt="part"
-              class="search_more mb-md-7 mb-2"
+              class="explore_＿more--img mb-md-7 mb-2"
             />
             <p class="fs-md-4 fs-6 ff-nsft m-0">聯誼</p>
           </div>
@@ -100,7 +102,7 @@
             <img
               src="../assets/images/cate03.svg"
               alt="part"
-              class="search_more mb-md-7 mb-2"
+              class="explore_＿more--img mb-md-7 mb-2"
             />
             <p class="fs-md-4 fs-6 ff-nsft m-0">展覽</p>
           </div>
@@ -110,7 +112,7 @@
             <img
               src="../assets/images/cate04.svg"
               alt="part"
-              class="search_more mb-md-7 mb-2"
+              class="explore_＿more--img mb-md-7 mb-2"
             />
             <p class="fs-md-4 fs-6 ff-nsft m-0">美食</p>
           </div>
@@ -120,7 +122,7 @@
             <img
               src="../assets/images/cate05.svg"
               alt="part"
-              class="search_more mb-md-7 mb-2"
+              class="explore_＿more--img mb-md-7 mb-2"
             />
             <p class="fs-md-4 fs-6 ff-nsft m-0">戶外</p>
           </div>
@@ -135,6 +137,16 @@
             >
               探索<br />美食
             </a>
+          </div>
+        </div>
+      </div>
+      <div class="recent__item row">
+        <div class="recent__item--title">
+          <div
+            class="border border-3 border-primary d-flex justify-content-between align-items-center py-md-4 px-md-6 py-3 px-7"
+          >
+            <h2 class="fs-md-11 fs-4">RECENT</h2>
+            <h2 class="fs-md-2 fs-6">近期活動</h2>
           </div>
         </div>
       </div>

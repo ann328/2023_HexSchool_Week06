@@ -1,18 +1,18 @@
-// * {
-//   outline: 1px solid red;
-// }
-.event_banner {
+* {
+  outline: 1px solid red;
+}
+.banner__event {
   max-height: 518px;
   object-fit: cover;
   @include phone {
     max-height: 350px;
   }
 }
-.banner_img--title {
+.banner__img--title {
   top: 48px;
   left: 48px;
 }
-.search_more {
+.explore_＿more--img {
   max-width: 80px;
   max-height: 80px;
   object-fit: cover;

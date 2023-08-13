@@ -1,4 +1,4 @@
-.logo {
+.logo__img {
   width: 53px;
   height: 53px;
   @include phone {
@@ -6,7 +6,7 @@
     height: 40px;
   }
 }
-.seach {
+.seach__input {
   width: 335px;
   @include phone {
     width: 207px;
