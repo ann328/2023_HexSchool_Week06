@@ -11,11 +11,4 @@
   @include phone {
     width: 207px;
   }
-  input::placeholder {
-    font-family: "Noto Sans TC", sans-serif;
-    color: #878787;
-  }
-  input:focus::placeholder {
-    color: $ticket-bg;
-  }
 }

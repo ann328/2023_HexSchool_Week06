@@ -12,30 +12,34 @@
     <link rel="stylesheet" href="../assets/images/iconfont/icofont.css" />
     <title>index</title>
   </head>
+
   <body class="bg-t">
     <%- include('./layout/header'); -%>
     <div class="container">
       <div class="banner carousel slide pt-md-6 pt-3 mb-5" id="banner">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="position-absolute">
+            <div class="position-relative">
               <h2
-                class="banner__img--title text-white m-0 position-relative fs-md-9 fs-2"
+                class="banner__img--title text-white m-0 position-absolute fs-md-9 fs-2 fw-normal"
               >
-                19 MAY 2023
+                19 MAY<br class="d-md-none d-block" />
+                2023
               </h2>
             </div>
             <img
               src="../assets/images/event/13.jpg"
-              class="banner__event d-block w-100"
+              class="banner__event d-block w-100 img-fluid"
               alt="event_img"
             />
 
-            <div class="carousel-caption p-0">
-              <h3 class="fs-md-4 fs-8 ff-nsft m-0 mb-md-3 mb-4 ls-md-1 ls-2">
+            <div class="carousel-caption p-0 bottom-0">
+              <h3
+                class="fs-md-4 fs-8 ff-nsft m-0 mb-md-3 mb-4 ls-md-1 ls-2 fw-bold"
+              >
                 隔牆有耳-沒有草東的派對
               </h3>
-              <p class="ff-nsst d-md-block d-none mb-4 lh-base">
+              <p class="ff-nsst d-md-block d-none mb-4 lh-base fw-normal">
                 你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
                 帶上啤酒、野餐墊，讓我們在Live
                 House外面一起開場「沒有草東的派對」吧！
@@ -43,10 +47,20 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img
+              src="https://fakeimg.pl/1296x518/ff0000/"
+              class="d-block w-100"
+              alt="..."
+              class="banner__event d-block w-100 img-fluid"
+            />
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img
+              src="https://fakeimg.pl/1296x518/ff0000/"
+              class="d-block w-100"
+              alt="..."
+              class="banner__event d-block w-100 img-fluid"
+            />
           </div>
         </div>
         <button
@@ -68,9 +82,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div
-        class="explore row grid gy-lg-0 gx-md-4 gy-md-2 gx-2 gy-2 mb-md-5 mb-6"
-      >
+      <div class="explore row gy-lg-0 gx-md-4 gy-md-2 gx-2 gy-2 mb-md-5 mb-6">
         <div class="col-lg-2 col-md-4 col-4">
           <div
             class="border border-2 border-black text-center py-md-35 py-20 mb-md-0"
@@ -78,9 +90,9 @@
             <img
               src="../assets/images/cate01.svg"
               alt="part"
-              class="explore_＿more--img mb-md-7 mb-2"
+              class="explore__more--img mb-md-7 mb-2"
             />
-            <p class="fs-md-4 fs-6 ff-nsft m-0">演出</p>
+            <p class="fs-md-4 fs-6 ff-nsft m-0 fw-bold">演出</p>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-4">
@@ -90,9 +102,9 @@
             <img
               src="../assets/images/cate02.svg"
               alt="part"
-              class="explore_＿more--img mb-md-7 mb-2"
+              class="explore__more--img mb-md-7 mb-2"
             />
-            <p class="fs-md-4 fs-6 ff-nsft m-0">聯誼</p>
+            <p class="fs-md-4 fs-6 ff-nsft m-0 fw-bold">聯誼</p>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-4">
@@ -102,9 +114,9 @@
             <img
               src="../assets/images/cate03.svg"
               alt="part"
-              class="explore_＿more--img mb-md-7 mb-2"
+              class="explore__more--img mb-md-7 mb-2"
             />
-            <p class="fs-md-4 fs-6 ff-nsft m-0">展覽</p>
+            <p class="fs-md-4 fs-6 ff-nsft m-0 fw-bold">展覽</p>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-4">
@@ -112,9 +124,9 @@
             <img
               src="../assets/images/cate04.svg"
               alt="part"
-              class="explore_＿more--img mb-md-7 mb-2"
+              class="explore__more--img mb-md-7 mb-2"
             />
-            <p class="fs-md-4 fs-6 ff-nsft m-0">美食</p>
+            <p class="fs-md-4 fs-6 ff-nsft m-0 fw-bold">美食</p>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-4">
@@ -122,36 +134,184 @@
             <img
               src="../assets/images/cate05.svg"
               alt="part"
-              class="explore_＿more--img mb-md-7 mb-2"
+              class="explore__more--img mb-md-7 mb-2"
             />
-            <p class="fs-md-4 fs-6 ff-nsft m-0">戶外</p>
+            <p class="fs-md-4 fs-6 ff-nsft m-0 fw-bold">戶外</p>
           </div>
         </div>
-        <div class="col-lg-2 col-md-4 col-4">
-          <div
-            class="border border-2 border-primary bg-primary text-center py-md-38 py-20"
+        <div class="col-lg-2 col-md-4 col-4 d-flex">
+          <a
+            href="#"
+            class="border border-2 border-black text-center py-20 bg-primary text-secondary text-decoration-none flex-grow-1 link-color-y-hover"
           >
-            <a
-              href="#"
-              class="text-secondary link-opacity-hover-0 fs-md-10 fs-4 ff-nsft m-0 lh-md-125 lh-133"
-            >
-              探索<br />美食
-            </a>
-          </div>
+            <p class="fs-md-10 fs-5 ff-nsft ls-md-125 ls-133 fw-bold m-0">
+              探索 <br />更多
+            </p>
+          </a>
         </div>
       </div>
       <div class="recent__item row">
-        <div class="recent__item--title">
+        <div class="recent__item--title col-12 mb-md-6 mb-4">
           <div
             class="border border-3 border-primary d-flex justify-content-between align-items-center py-md-4 px-md-6 py-3 px-7"
           >
-            <h2 class="fs-md-11 fs-4">RECENT</h2>
-            <h2 class="fs-md-2 fs-6">近期活動</h2>
+            <h2 class="fs-md-11 fs-4 fw-normal m-0">RECENT</h2>
+            <h2 class="fs-md-2 fs-6 fw-bold m-0 ff-nsft">近期活動</h2>
+          </div>
+        </div>
+      </div>
+      <div class="recent__item row gy-md-5 gy-4 mb-md-60 mb-6">
+        <%- include('./layout/recent__item--card'); -%>
+      </div>
+      <div class="oneline__item row">
+        <div class="recent__item--title col-12 mb-md-6 mb-4">
+          <div
+            class="border border-3 border-primary d-flex justify-content-between align-items-center py-md-4 px-md-6 py-3 px-7"
+          >
+            <h2 class="fs-md-11 fs-4 fw-normal m-0">ONLINE</h2>
+            <h2 class="fs-md-2 fs-6 fw-bold m-0 ff-nsft">線上活動</h2>
+          </div>
+        </div>
+      </div>
+      <div class="oneline__item row mb-md-9 mb-6">
+        <div class="col-md-7 col-12 d-flex">
+          <div class="oneline__item--block mb-md-0 mb-7 w-100 d-flex">
+            <div class="oneline__item--img flex-grow-1"></div>
+          </div>
+        </div>
+        <div class="col-md-5 col-12">
+          <h3 class="text-black ff-nsft fs-md-2 fw-bold fs-8 m-0 mb-md-3 mb-1">
+            切特居批踢
+          </h3>
+          <div class="oneline__item--link d-flex mb-md-6 mb-7">
+            <a
+              href="#"
+              class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none me-2"
+              >競賽</a
+            >
+            <a
+              href="#"
+              class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none me-2"
+              >科技</a
+            >
+            <a
+              href="#"
+              class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none"
+              >有趣</a
+            >
+          </div>
+          <p class="text-black ff-nsst fs-6 fw-normal mb-md-6 mb-7">
+            最近網路上很流行的AI程式
+            ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br />
+            這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br />
+            該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary w-100 text-center ff-nsst py-md-2 py-3 link-color-s-hover"
+            >查看活動詳情 &raquo;</a
+          >
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/marquee'); -%>
+    <div class="container">
+      <ul
+        class="activity__item row gy-md-0 gy-6 py-md-6 py-4 justify-content-center list-unstyled"
+      >
+        <%- include('./layout/activity__item'); -%>
+      </ul>
+    </div>
+    <%- include('./layout/marquee'); -%>
+    <div class="container mb-md-62 mb-5">
+      <div class="contact__item row py-md-60 pt-6 pb-5 gx-0 gy-md-0 gy-4">
+        <div class="col-md-6 col-12">
+          <div
+            class="contact__item--title py-3 px-md-6 px-7 border border-2 border-black"
+          >
+            <h2 class="ff-nsft fs-md-2 fs-4 fw-bold text-uppercase">
+              #FOLLOW US
+            </h2>
+          </div>
+          <div
+            class="py-md-6 py-3 px-md-6 px-7 border border-top-0 border-2 border-black"
+          >
+            <p class="text-black ff-nsst fw-normal mb-md-6 mb-3">
+              想第一時間獲得新奇有趣的活動資訊？<br />
+              追蹤我們的社群吧！<br />
+              也歡迎你聯繫我們，提供好玩有趣的活動企劃。<br />
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-3 ff-nsst fs-6 fw-normal">
+                <a href="#" class="text-decoration-none link-color-y-hover">
+                  <i
+                    class="icofont-ui-email p-2 bg-primary text-white me-3"
+                  ></i>
+                  7tao.event@gmail.com
+                </a>
+              </li>
+              <li class="mb-3 ff-nsst fs-6 fw-normal">
+                <a href="#" class="text-decoration-none link-color-y-hover">
+                  <i class="icofont-phone p-2 bg-primary text-white me-3"></i>
+                  09123123123
+                </a>
+              </li>
+              <li class="ff-nsst fs-6 fw-normal">
+                <a href="#" class="text-decoration-none link-color-y-hover">
+                  <i
+                    class="icofont-facebook p-2 bg-primary text-white me-3"
+                  ></i>
+                  7TAO七逃
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-12 d-flex flex-column">
+          <div
+            class="contact__item--title py-3 px-md-6 px-7 border border-bottom-0 border-2 border-black"
+          >
+            <h2 class="ff-nsft fs-md-2 fs-4 fw-bold text-uppercase">
+              #subscribe us
+            </h2>
+          </div>
+          <div
+            class="border border-2 border-black d-flex flex-column flex-grow-1"
+          >
+            <div
+              class="py-md-6 px-md-6 pt-3 px-7 d-flex flex-column flex-grow-1"
+            >
+              <p class="text-black ff-nsst fw-normal fs-6 mb-md6 mb-3">
+                訂閱電子報送折價券！<br class="d-md-block d-none" />
+                定期精選文章資訊及最新優惠資訊，<br class="d-md-block d-none" />
+                還不通通給我訂閱起來？
+              </p>
+              <form action="#" method="post" class="input__hover">
+                <input
+                  type="email"
+                  class="form-control bg-t border border-2 border-primary py-3 px-4 mb-3 mb-md-0"
+                  id="email"
+                  placeholder="輸入Email"
+                />
+              </form>
+            </div>
+            <a
+              href="#"
+              class="btn btn-primary w-100 text-center ff-nsst py-md-2 py-3 link-color-s-hover d-flex align-items-center justify-content-center"
+              >確認訂閱 &raquo;</a
+            >
           </div>
         </div>
       </div>
     </div>
-    <%- include('./layout/footer'); -%>
+    <div class="border-top border-3 border-primary py-md-60 py-5 text-center">
+      <h2 class="text-black fs-md-2 fw-bold fs-8 mb-md-3 mb-7 ff-nsft">
+        此刻打盹，你將做夢；此刻學習，你將圓夢
+      </h2>
+      <p class="text-black fs-md-2 fw-bold fs-7 ff-nsft">——我也不知道誰說的</p>
+    </div>
+    <%- include('./layout/modal__join--member'); -%> <%-
+    include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

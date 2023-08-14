@@ -429,6 +429,7 @@ $spacers: (
   2: $spacer * 0.5,
   //8
   3: $spacer,
+  //16
   4: $spacer * 1.5,
   //24
   5: $spacer * 3,
@@ -445,6 +446,10 @@ $spacers: (
   //ann 35
   38: calc(($spacer * 2) + 6px),
   //ann 38
+  60: $spacer * 3.75,
+  //ann 60
+  62: $spacer * 3.875,
+  //ann 60
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -594,7 +599,7 @@ $component-active-bg: $primary !default;
 // scss-docs-start focus-ring-variables
 $focus-ring-width: 0.25rem !default;
 $focus-ring-opacity: 0.25 !default;
-$focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
+$focus-ring-color: #c96464; //ann rgba($primary, $focus-ring-opacity) !default;
 $focus-ring-blur: 0 !default;
 $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
 // scss-docs-end focus-ring-variables

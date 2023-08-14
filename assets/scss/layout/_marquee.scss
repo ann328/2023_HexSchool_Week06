@@ -1,0 +1,28 @@
+.marquee__block {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee__item {
+    display: inline-block;
+    animation: marquee 45s linear infinite;
+    animation-play-state: running;
+  }
+  
+  .marquee__contain {
+    white-space: nowrap;
+  }
+  
+  .marquee__block:hover .marquee__item {
+    animation-play-state: paused;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-100%));
+    }
+  }

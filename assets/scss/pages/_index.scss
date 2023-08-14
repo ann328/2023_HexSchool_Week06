@@ -1,27 +1,129 @@
-* {
-  outline: 1px solid red;
-}
 .banner__event {
   max-height: 518px;
-  object-fit: cover;
+
   @include phone {
     max-height: 350px;
   }
 }
+
 .banner__img--title {
   top: 48px;
   left: 48px;
+  @include phone {
+    top: 16px;
+    left: 40px;
+  }
 }
-.explore_＿more--img {
+
+.explore__more--img {
   max-width: 80px;
   max-height: 80px;
-  object-fit: cover;
+  transition: all 1.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  @include phone {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+.recent__item--block {
+  width: 100%;
+  height: 255px;
+  overflow: hidden;
+
+  @include phone {
+    height: 210px;
+  }
+}
+
+.recent__item--img {
+  width: 100%;
+  height: 255px;
+
+  @include phone {
+    height: 210px;
+  }
+
+  transition: all 1.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.recent__item--sTitle {
+  width: 24px;
+  height: 24px;
+
+  @include phone {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.link-bgc-y-hover {
+  transition: all 1.2s;
+
+  &:hover {
+    background-color: $secondary;
+    border-radius: 50px;
+  }
+}
+.oneline__item--block {
+  overflow: hidden;
+  @include tab {
+    min-height: 158px;
+  }
+}
+.oneline__item--img {
+  background-image: url(../images/event/online.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.activity__item--block {
+  height: 274px;
+  overflow: hidden;
+  z-index: 0;
+  @include phone {
+    height: 267px;
+  }
+}
+.activity__item--img {
+  height: 274px;
   transition: all 1.2s;
   &:hover {
     transform: scale(1.2);
   }
+  &:focus {
+    transform: scale(1.2);
+  }
   @include phone {
-    max-width: 40px;
-    max-height: 40px;
+    height: 267px;
+  }
+}
+.activity__item li {
+  &:nth-child(2n) {
+    transform: rotate(2deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(-2deg);
   }
 }

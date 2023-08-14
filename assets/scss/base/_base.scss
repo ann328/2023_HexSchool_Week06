@@ -10,12 +10,9 @@ img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 a {
   display: block;
   color: $primary;
-  text-decoration: none;
-  &:hover {
-    color: $other;
-  }
 }
