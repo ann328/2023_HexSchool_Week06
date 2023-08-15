@@ -250,7 +250,7 @@
       </div>
       <!-- row gy-md-5 gy-4 -->
       <div class="recent__item swiper mySwiper ">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper row gy-md-5 gy-4">
           <div class="recent__item--card swiper-slide col-md-4 col-12 d-flex">
   <div class="card bg-t border-0">
     <a href="#" class="text-decoration-none d-flex flex-column flex-grow-1">
@@ -918,7 +918,8 @@
   </div>
 </div>        </p>
       </div>
-      <div class="oneline__item row mt-md-60 mt-6">
+      <!-- mt-md-60 mt-6 -->
+      <div class="oneline__item row ">
         <div class="recent__item--title col-12 mb-md-6 mb-4">
           <div
             class="border border-3 border-primary d-flex justify-content-between align-items-center py-md-4 px-md-6 py-3 px-7"
@@ -1243,10 +1244,11 @@
     rows: 2,
     fill: "row"
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false
-  },
+  // 我先關掉
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false
+  // },
   breakpoints: {
     768: {
       slidesPerView: 3,
