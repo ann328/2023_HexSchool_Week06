@@ -10,6 +10,10 @@
       href="../assets/images/iconfont/icofont.min.css"
     />
     <link rel="stylesheet" href="../assets/images/iconfont/icofont.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <title>index</title>
   </head>
 
@@ -141,10 +145,10 @@
         </div>
         <div class="col-lg-2 col-md-4 col-4 d-flex">
           <a
-            href="#"
-            class="border border-2 border-black text-center py-20 bg-primary text-secondary text-decoration-none flex-grow-1 link-color-y-hover"
+            href="./explore_more.html"
+            class="border border-2 border-black text-center py-md-38 py-4 bg-primary text-secondary text-decoration-none  link-color-y-hover flex-grow-1 d-flex align-items-center justify-content-center"
           >
-            <p class="fs-md-10 fs-5 ff-nsft ls-md-125 ls-133 fw-bold m-0">
+            <p class="fs-md-10 fs-5 lh-md-125 lh-133 ff-nsft fw-bold m-0">
               探索 <br />更多
             </p>
           </a>
@@ -160,10 +164,13 @@
           </div>
         </div>
       </div>
-      <div class="recent__item row gy-md-5 gy-4 mb-md-60 mb-6">
-        <%- include('./layout/recent__item--card'); -%>
+      <!-- row gy-md-5 gy-4 -->
+      <div class="recent__item swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <%- include('./layout/recent__item--card'); -%>
+        </p>
       </div>
-      <div class="oneline__item row">
+      <div class="oneline__item row mt-md-60 mt-6">
         <div class="recent__item--title col-12 mb-md-6 mb-4">
           <div
             class="border border-3 border-primary d-flex justify-content-between align-items-center py-md-4 px-md-6 py-3 px-7"
@@ -183,23 +190,29 @@
           <h3 class="text-black ff-nsft fs-md-2 fw-bold fs-8 m-0 mb-md-3 mb-1">
             切特居批踢
           </h3>
-          <div class="oneline__item--link d-flex mb-md-6 mb-7">
-            <a
-              href="#"
-              class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none me-2"
-              >競賽</a
-            >
-            <a
-              href="#"
-              class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none me-2"
-              >科技</a
-            >
-            <a
-              href="#"
-              class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none"
-              >有趣</a
-            >
-          </div>
+          <ul class="oneline__item--link d-flex mb-md-6 mb-7 list-unstyled">
+            <li>
+              <a
+                href="#"
+                class="link__tag fs-md-6 fs-7 ff-nsft py-1 ps-20 pe-4 text-decoration-none me-2"
+                >競賽</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link__tag fs-md-6 fs-7 ff-nsft py-1 ps-20 pe-4 text-decoration-none me-2"
+                >科技</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="link__tag fs-md-6 fs-7 ff-nsft py-1 px-4 text-decoration-none"
+                >有趣</a
+              >
+            </li>
+          </ul>
           <p class="text-black ff-nsst fs-6 fw-normal mb-md-6 mb-7">
             最近網路上很流行的AI程式
             ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br />
@@ -243,7 +256,7 @@
             </p>
             <ul class="list-unstyled">
               <li class="mb-3 ff-nsst fs-6 fw-normal">
-                <a href="#" class="text-decoration-none link-color-y-hover">
+                <a href="#" class="text-decoration-none link-color-y-hover d-flex align-items-center">
                   <i
                     class="icofont-ui-email p-2 bg-primary text-white me-3"
                   ></i>
@@ -251,13 +264,13 @@
                 </a>
               </li>
               <li class="mb-3 ff-nsst fs-6 fw-normal">
-                <a href="#" class="text-decoration-none link-color-y-hover">
+                <a href="#" class="text-decoration-none link-color-y-hover d-flex align-items-center">
                   <i class="icofont-phone p-2 bg-primary text-white me-3"></i>
                   09123123123
                 </a>
               </li>
               <li class="ff-nsst fs-6 fw-normal">
-                <a href="#" class="text-decoration-none link-color-y-hover">
+                <a href="#" class="text-decoration-none link-color-y-hover d-flex align-items-center">
                   <i
                     class="icofont-facebook p-2 bg-primary text-white me-3"
                   ></i>
@@ -313,5 +326,39 @@
     <%- include('./layout/modal__join--member'); -%> <%-
     include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: '0px',
+  looo: true,
+  grid: {
+    rows: 2,
+    fill: "row"
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+        fill: 'row',
+      },
+      spaceBetween: 30,
+    },
+    375: {
+      slidesPerView: 1,
+      grid: {
+        rows: 6,
+        fill: 'column',
+      },
+      spaceBetween: 30,
+    },
+  },
+});
+    </script>
   </body>
 </html>

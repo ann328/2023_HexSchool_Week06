@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/images/iconfont/icofont.min.css" />
+    <link rel="stylesheet" href="../assets/images/iconfont/icofont.css" />
+    <title>index</title>
+</head>
+
+<body class="bg-t">
+    <%- include('./layout/header'); -%>
+        <div class="container">
+            <div class="event___item row">
+                <div class="event__item--title col-12  mb-md-6 mb-7 mt-md-6 mt-3">
+                    <div
+                        class="d-flex justify-content-between align-items-center border border-3 border-primary py-md-4 px-md-6 py-3 px-7">
+                        <h2 class="fs-md-11 fw-normal fs-4 m-0">EVENT</h2>
+                        <h2 class="ff-nsft fs-md-2 fw-bold fs-6 m-0">所有活動</h2>
+                    </div>
+                </div>
+                <%- include('./layout/event__item--link'); -%>
+            </div>
+            <div class="event___item--card row">
+                <%- include('./layout/event__item--card'); -%>
+            </div>
+        </div>
+        <%- include('./layout/modal__join--member'); -%>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
