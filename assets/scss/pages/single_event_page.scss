@@ -1,0 +1,10 @@
+// *{
+//     outline: 1px solid red;
+// }
+
+.single__event--block{
+    height: 598px;
+    @include phone{
+        height: 204px;
+    }
+}

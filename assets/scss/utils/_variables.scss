@@ -440,16 +440,23 @@ $spacers: (
   //ann, 12
   8: $spacer * 0.875,
   //ann 14
+  11:$spacer * 0.6875,//ann 11
   20: $spacer * 1.25,
   //ann 20
+  25: $spacer * 1.5625,//ann 25
+  30: $spacer * 1.875,
+  //ann 30
   35: calc(($spacer * 2) + 3px),
   //ann 35
   38: calc(($spacer * 2) + 6px),
   //ann 38
+  40: $spacer * 2.5,
+  //ann 40
   60: $spacer * 3.75,
   //ann 60
   62: $spacer * 3.875,
   //ann 60
+  96: $spacer * 6,//ann 96
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -486,7 +493,7 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+$link-decoration: none ;//ann underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
@@ -507,7 +514,7 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 0;//ann 1rem !default;
 
 // Grid breakpoints
 //
@@ -696,11 +703,13 @@ $font-sizes: (
   //ann 48
   11: $font-size-base * 4,
   //ann 64
+  12: $font-size-base * 1.375,
+  //ann 22
 ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * 0.5 !default;
+$headings-margin-bottom: 0;//ann $spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
@@ -776,15 +785,15 @@ $mark-bg: $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y: 0.5rem !default;
-$table-cell-padding-x: 0.5rem !default;
+$table-cell-padding-y: 1rem ;//ann 0.5rem !default;
+$table-cell-padding-x: 0;//ann 0.5rem !default;
 $table-cell-padding-y-sm: 0.25rem !default;
 $table-cell-padding-x-sm: 0.25rem !default;
 
-$table-cell-vertical-align: top !default;
+$table-cell-vertical-align:  center ;//ann top !default;
 
-$table-color: var(--#{$prefix}body-color) !default;
-$table-bg: var(--#{$prefix}body-bg) !default;
+$table-color: $black;//ann var(--#{$prefix}body-color) !default;
+$table-bg: $ticket-bg;//ann var(--#{$prefix}body-bg) !default;
 $table-accent-bg: transparent !default;
 
 $table-th-font-weight: null !default;
@@ -802,8 +811,8 @@ $table-hover-bg-factor: 0.075 !default;
 $table-hover-bg: rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor: 0.1 !default;
-$table-border-width: var(--#{$prefix}border-width) !default;
-$table-border-color: var(--#{$prefix}border-color) !default;
+$table-border-width:  1px;//ann var(--#{$prefix}border-width) !default;
+$table-border-color: $primary ;//ann var(--#{$prefix}border-color) !default;
 
 $table-striped-order: odd !default;
 $table-striped-columns-order: even !default;
@@ -1372,8 +1381,8 @@ $dropdown-dark-header-color: $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y: 0.375rem !default;
-$pagination-padding-x: 0.75rem !default;
+$pagination-padding-y: 0.5rem ;//ann 0.375rem !default;
+$pagination-padding-x: 0.9375rem ;//ann 0.75rem !default;
 $pagination-padding-y-sm: 0.25rem !default;
 $pagination-padding-x-sm: 0.5rem !default;
 $pagination-padding-y-lg: 0.75rem !default;
@@ -1381,27 +1390,27 @@ $pagination-padding-x-lg: 1.5rem !default;
 
 $pagination-font-size: $font-size-base !default;
 
-$pagination-color: var(--#{$prefix}link-color) !default;
-$pagination-bg: var(--#{$prefix}body-bg) !default;
+$pagination-color: $primary;//ann var(--#{$prefix}link-color) !default;
+$pagination-bg: $ticket-bg ;//ann var(--#{$prefix}body-bg) !default;
 $pagination-border-radius: var(--#{$prefix}border-radius) !default;
 $pagination-border-width: var(--#{$prefix}border-width) !default;
 $pagination-margin-start: calc(
   #{$pagination-border-width} * -1
 ) !default; // stylelint-disable-line function-disallowed-list
-$pagination-border-color: var(--#{$prefix}border-color) !default;
+$pagination-border-color: $primary;//ann var(--#{$prefix}border-color) !default;
 
-$pagination-focus-color: var(--#{$prefix}link-hover-color) !default;
-$pagination-focus-bg: var(--#{$prefix}secondary-bg) !default;
-$pagination-focus-box-shadow: $focus-ring-box-shadow !default;
+$pagination-focus-color: $secondary ;//ann var(--#{$prefix}link-hover-color) !default;
+$pagination-focus-bg: $primary ;//ann var(--#{$prefix}secondary-bg) !default;
+$pagination-focus-box-shadow: $ticket-bg;//ann $focus-ring-box-shadow !default;
 $pagination-focus-outline: 0 !default;
 
-$pagination-hover-color: var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg: var(--#{$prefix}tertiary-bg) !default;
+$pagination-hover-color: $secondary ;//ann var(--#{$prefix}link-hover-color) !default;
+$pagination-hover-bg: $primary;//ann var(--#{$prefix}tertiary-bg) !default;
 $pagination-hover-border-color: var(
   --#{$prefix}border-color
 ) !default; // Todo in v6: remove this?
 
-$pagination-active-color: $component-active-color !default;
+$pagination-active-color: $secondary;//ann $component-active-color !default;
 $pagination-active-bg: $component-active-bg !default;
 $pagination-active-border-color: $component-active-bg !default;
 

@@ -17,15 +17,34 @@
                 <div class="event__item--title col-12  mb-md-6 mb-7 mt-md-6 mt-3">
                     <div
                         class="d-flex justify-content-between align-items-center border border-3 border-primary py-md-4 px-md-6 py-3 px-7">
-                        <h2 class="fs-md-11 fw-normal fs-4 m-0">EVENT</h2>
-                        <h2 class="ff-nsft fs-md-2 fw-bold fs-6 m-0">所有活動</h2>
+                        <h2 class="fs-md-11 fw-normal fs-4 ">EVENT</h2>
+                        <h2 class="ff-nsft fs-md-2 fw-bold fs-6 ">所有活動</h2>
                     </div>
                 </div>
                 <%- include('./layout/event__item--link'); -%>
             </div>
-            <div class="event___item--card row">
+            <div class="event___item--card row gy-md-5 gy-4 mb-md-60 mb-6">
                 <%- include('./layout/event__item--card'); -%>
             </div>
+            <nav aria-label="Page navigation ">
+                    <ul class="pagination justify-content-center mb-md-60 mb-5">
+                      <li class="page-item me-2">
+                        <a class="page-link px-11" href="#" aria-label="Previous">
+                            <i class="icofont-arrow-left"></i>
+                        </a>
+                      </li>
+                      <li class="page-item me-2"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item me-2 active"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item me-2"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item me-2"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item me-2"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link px-11" href="#" aria-label="Next">
+                            <i class="icofont-arrow-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+            </nav>
         </div>
         <%- include('./layout/modal__join--member'); -%>
         <%- include('./layout/footer'); -%>

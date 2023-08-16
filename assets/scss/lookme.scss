@@ -15,9 +15,16 @@ $spacers: (
   6: $spacer * 2,//ann 32
   7: $spacer * 0.75,//ann 12
   8: $spacer * 0.875,//ann 14
+  11:$spacer * 0.6875,//ann 11
   20: $spacer * 1.25,//ann 20
+  25: $spacer * 1.5625,//ann 25
+  30: $spacer * 1.875,//ann 30
   35: calc(($spacer * 2) + 3px),//ann 35
   38: calc(($spacer * 2) + 6px),//ann 38
+  40: $spacer * 2.5,//ann 40
+  60: $spacer * 3.75,//ann 60
+  62: $spacer * 3.875,//ann 60
+  96: $spacer * 6,//ann 96
 )
 $font-sizes: (
   7: $font-size-base * 0.875,//ann 14
@@ -25,4 +32,5 @@ $font-sizes: (
   9: $font-size-base * 3.75,//ann 60
   10: $font-size-base * 3,//ann 48
   11: $font-size-base * 4,//ann 64
+  12: $font-size-base * 1.375,//ann 22
 )

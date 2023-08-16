@@ -44,6 +44,15 @@
     color: #9c9e18 !important;
   }
 }
+.link-color-ly-hover {
+  &:hover {
+    color: $secondary !important;
+  }
+
+  &:focus {
+    color: $secondary !important;
+  }
+}
 
 .link-color-s-hover {
   &:hover {
