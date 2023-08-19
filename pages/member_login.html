@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/images/iconfont/icofont.min.css" />
+    <link rel="stylesheet" href="../assets/images/iconfont/icofont.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>index</title>
+</head>
+
+<body class="bg-t">
+    <%- include('./layout/header'); -%>
+        <div class="container vh-calc">
+            <div class="mt-60 text-center mb-3">
+                <img src="../assets/images/sparkler.png" alt="sparkler" class="booking__img">
+            </div>
+            <h2 class="text-center text-primary ff-nsft fs-4 fw-bold ls-1 mb-3">會員登入</h2>
+            <div class="row">
+                <form action="" method="post">
+                    <div class="col-md-4 mx-auto mb-6">
+                        <div class="input-grop mb-3">
+                            <label for="account" class="form-label text-dark ff-nsst fs-6 fw-normal">
+                                帳號
+                            </label>
+                            <input type="text" id="account"
+                                class="form-control bg-t border border-2 border-primary py-2 px-3"
+                                aria-describedby="contactName" placeholder="請輸入帳號" required>
+                            <div class="invalid-feedback">
+                                請輸入帳號
+                            </div>
+                        </div>
+                        <div class="input-grop mb-3">
+                            <label for="password" class="form-label text-dark ff-nsst fs-6 fw-normal">
+                                密碼
+                            </label>
+                            <input type="password" id="password"
+                                class="form-control bg-t border border-2 border-primary py-2 px-3"
+                                aria-describedby="contactName" placeholder="請輸入密碼" required>
+                            <div class="invalid-feedback">
+                                請輸入密碼
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <input type="submit"
+                                class="mx-auto  text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
+                                value="登入&raquo;"> -->
+                    <a href="./index.html"
+                        class="col-md-4 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0">登入&raquo;</a>
+                </form>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (() => {
+                    'use strict'
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    const forms = document.querySelectorAll('.needs-validation')
+
+                    // Loop over them and prevent submission
+                    Array.from(forms).forEach(form => {
+                        form.addEventListener('submit', event => {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+                })()
+            </script>
+</body>
+
+</html>

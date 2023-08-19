@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/images/iconfont/icofont.min.css" />
+    <link rel="stylesheet" href="../assets/images/iconfont/icofont.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>index</title>
+</head>
+
+<body class="bg-t">
+    <%- include('./layout/header'); -%>
+        <div class="container">
+            <div class="row mt-60 mb-md-5 mb-4">
+                <div class="col-md-6 mx-auto">
+                    <ol class="pay__line m-0 d-flex justify-content-between list-unstyled position-relative">
+                        <li class="d-flex flex-column align-items-center">
+                            <!-- py-md-8 px-md-8 -->
+                            <!-- py-1 px-11 -->
+                            <!-- ls-24 -->
+                            <a href="./booking_confirmation.html" class="m-0 p-0 d-flex flex-column">
+                                <p
+                                    class="border border-1 border-primary bg-primary text-secondary px-md-3 py-md-7 px-2 py-1 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ">
+                                    <span class="icofont-verification-check fs-6 "></span>
+                                </p>
+                            </a>
+                            <p class="fw-bold ls-24 ff-nsft text-dark">訂單確認</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center">
+                            <a href="./successfully_ordered.html" class="m-0 p-0 d-flex flex-column">
+                                <p
+                                    class="border border-1 border-primary bg-primary text-secondary px-md-3 py-md-7 px-2 py-1 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ">
+                                    <span class="icofont-verification-check fs-6 "></span>
+                                </p>
+                            </a>
+                            <p class="fw-bold ls-24 ff-nsft text-dark">結帳付款</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center">
+                            <p
+                                class="border border-1 border-primary bg-primary text-secondary py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
+                                3
+                            </p>
+                            <p class="fw-bold ls-24 ff-nsft text-dark">訂購結果</p>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+            <div class="text-center mb-6">
+                <div class="mb-md-2 mb-3">
+                    <i class="icofont-check-circled fs-md-13 fs-2"></i>
+                </div>
+                <h2 class="text-primary ff-nsft ls-2 fs-md-2 fs-4 fw-bold">訂購成功</h2>
+            </div>
+            <div class="row mb-md-60 mb-5">
+                <div class="col-md-6 mx-auto">
+                    <table class="table table-hover border-top border-2 border-primary mb-3">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">訂單編號</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">892746123</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">票種</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">改頭換面票（含大改造）</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">訂購時間</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">2023/04/28 14:30</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">取票序號</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-other text-end ff-nsst fs-6 fw-normal">95G54J4434</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">取票號碼</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-other text-end ff-nsst fs-6 fw-normal">04597101</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-dis ff-nsst fs-6 fw-normal lh-base">
+                        請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>
+                        若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+                        若需退票，請按照退票辦法進行申請。<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>
