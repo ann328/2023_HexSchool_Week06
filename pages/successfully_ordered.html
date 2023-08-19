@@ -18,15 +18,20 @@
                 <div class="col-md-6 mx-auto">
                     <ol class="pay__line m-0 d-flex justify-content-between list-unstyled position-relative">
                         <li class="d-flex flex-column align-items-center">
-                            <p
-                                class="border border-1 border-primary bg-primary text-secondary py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
-                                1
-                            </p>
+                            <!-- py-md-8 px-md-8 -->
+                            <!-- py-1 px-11 -->
+                            <!-- ls-24 -->
+                            <a href="./booking_confirmation.html" class="m-0 p-0 d-flex flex-column">
+                                <p
+                                    class="border border-1 border-primary bg-primary text-secondary px-md-3 py-md-7 px-2 py-1 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ">
+                                    <span class="icofont-verification-check fs-6 "></span>
+                                </p>
+                            </a>
                             <p class="fw-bold ls-24 ff-nsft text-dark">訂單確認</p>
                         </li>
                         <li class="d-flex flex-column align-items-center">
                             <p
-                                class="border border-1 border-primary bg-t text-dark py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
+                                class="border border-1 border-primary bg-primary text-secondary py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
                                 2
                             </p>
                             <p class="fw-bold ls-24 ff-nsft text-dark">結帳付款</p>
@@ -44,32 +49,29 @@
             </div>
             <h2 class="text-md-center text-start ff-nsft fs-md-10 fs-2 fw-bold ls-md-5 ls-2 mb-md-6 mb-4">返老還童-制服聯誼
             </h2>
+            <p
+                class="p-2 bg-primary text-secondary text-center w-674 mx-auto fs-md-6 fs-7 fw-normal ff-nsst mb-md-6 mb-4">
+                您的訂單已保留，請在2023/5/30 04:32
+                前完成繳費。若逾期未繳款，系統將取消您的訂單。
+            </p>
             <div class="row mb-md-5 mb-6">
                 <div class="col-md-6 mx-auto">
                     <table class="table table-hover border-top border-2 border-primary">
                         <tbody>
                             <tr>
                                 <th scope="row" class="col-3">
-                                    <p class="text-dark ff-nsft fs-6 fw-bold">日期</p>
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">訂單編號</p>
                                 </th>
                                 <td class="col-3">
-                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">2023/5/12</p>
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">892746123</p>
                                 </td>
                             </tr>
                             <tr>
                                 <th scope="row" class="col-3">
-                                    <p class="text-dark ff-nsft fs-6 fw-bold">票種</p>
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">票券</p>
                                 </th>
                                 <td class="col-3">
-                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">改頭換面票（含大改造）</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="col-3">
-                                    <p class="text-dark ff-nsft fs-6 fw-bold">票價</p>
-                                </th>
-                                <td class="col-3">
-                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">$8000</p>
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">改頭換面票（含大改造）$8000</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -79,48 +81,48 @@
             <div class="text-center mb-3 ">
                 <img src="../assets/images/sparkler.png" alt="sparkler" class="booking__img">
             </div>
-            <h2 class="text-center text-primary ff-nsft fs-4 fw-bold ls-1 mb-3">聯絡人資料</h2>
-            <div class="row mb-60">
-                <form action="#" method="post" class="needs-validation " novalidate>
+            <h2 class="text-center text-primary ff-nsft fs-4 fw-bold ls-1 mb-3">結帳資訊</h2>
+            <div class="row mb-md-60 mb-10">
+                <form action="#" method="post" class="needs-validation" novalidate>
                     <div class="col-md-6 mx-auto">
                         <div class="input-grop mb-3">
-                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">聯絡人姓名</label>
+                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">取票資訊</label>
                             <input type="text" id="contactName"
                                 class="form-control bg-t border border-2 border-primary py-2 px-3"
-                                aria-describedby="contactName" placeholder="請輸入聯絡人名稱" required>
+                                aria-describedby="contactName" placeholder="請輸入身分證字號或護照號碼" required>
+                            <p class="text-dis ff-nsst fs-md-6 fs-7 fw-normal">請輸入您的 <span
+                                    class="text-other">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-other">護照號碼</span>
+                            </p>
                             <div class="invalid-feedback">
-                                請輸入聯絡人姓名
+                                請輸入請輸入身分證字號或護照號碼
                             </div>
                         </div>
-                        <div class="input-grop mb-3">
-                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">Email</label>
-                            <input type="email" id="contactName"
-                                class="form-control bg-t border border-2 border-primary py-2 px-3"
-                                aria-describedby="contactName" placeholder="請輸入Email" required>
-                            <div class="invalid-feedback">
-                                請輸入Email
+                        <div class="mb-md-6 mb-4">
+                            <p class="text-dark ff-nsst fs6 fw-normal mb-2">付款方式</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="credit__card">
+                                <label class="form-check-label ff-nsst fw-normal" for="credit__card">
+                                    信用卡
+                                </label>
                             </div>
-                        </div>
-                        <div class="input-grop mb-3">
-                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">手機</label>
-                            <input type="tel" id="contactName"
-                                class="form-control bg-t border border-2 border-primary py-2 px-3"
-                                aria-describedby="contactName" placeholder="請輸入手機號碼" required>
-                            <div class="invalid-feedback">
-                                請輸入手機
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="ATM" checked>
+                                <label class="form-check-label ff-nsst fw-normal" for="ATM">
+                                    ATM虛擬帳號
+                                </label>
                             </div>
                         </div>
                     </div>
                     <!-- <input type="submit"
                                 class="mx-auto  text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
-                                value="確認表單資料&raquo;"> -->
+                                value="確認訂單並繳費 $8000&raquo;"> -->
                     <a href="./successfully_ordered.html"
-                        class="col-md-3 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0">確認表單資料&raquo;</a>
-
-                    <a href="./single_event_page.html" class="text-center text-dis d-block">取消購票</a>
+                        class="col-md-3 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover  border-0">確認訂單並繳費
+                        $8000&raquo;</a>
                 </form>
             </div>
         </div>
+
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
 </body>
