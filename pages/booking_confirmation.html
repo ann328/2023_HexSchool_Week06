@@ -14,26 +14,134 @@
 <body class="bg-t">
     <%- include('./layout/header'); -%>
         <div class="container">
-            <div class="time__line row mt-60">
-                <div class="position-relative m-4">
-                    <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100" style="height: 1px;">
-                        <div class="progress-bar" style="width: 50%"></div>
-                    </div>
-                    <button type="button"
-                        class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
-                        style="width: 2rem; height:2rem;">1</button>
-                    <button type="button"
-                        class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
-                        style="width: 2rem; height:2rem;">2</button>
-                    <button type="button"
-                        class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
-                        style="width: 2rem; height:2rem;">3</button>
+            <div class="row mt-60 mb-md-5 mb-4">
+                <div class="col-md-6 mx-auto">
+                    <ol class="pay__line m-0 d-flex justify-content-between list-unstyled position-relative">
+                        <li class="d-flex flex-column align-items-center">
+                            <p
+                                class="border border-1 border-primary bg-primary text-secondary py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
+                                1
+                            </p>
+                            <p class="fw-bold ls-24 ff-nsft text-dark">訂單確認</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center">
+                            <p
+                                class="border border-1 border-primary bg-t text-dark py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
+                                2
+                            </p>
+                            <p class="fw-bold ls-24 ff-nsft text-dark">結帳付款</p>
+                        </li>
+                        <li class="d-flex flex-column align-items-center">
+                            <p
+                                class="border border-1 border-primary bg-t text-dark py-md-7 px-md-9 py-1 px-11 ff-nsft fw-bold fs-md-5 fs-6 mb-md-2 mb-1 ls-24">
+                                3
+                            </p>
+                            <p class="fw-bold ls-24 ff-nsft text-dark">訂購結果</p>
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+            <h2 class="text-md-center text-start ff-nsft fs-md-10 fs-2 fw-bold ls-md-5 ls-2 mb-md-6 mb-4">返老還童-制服聯誼
+            </h2>
+            <div class="row mb-md-5 mb-6">
+                <div class="col-md-6 mx-auto">
+                    <table class="table table-hover border-top border-2 border-primary">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">日期</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">2023/5/12</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">票種</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">改頭換面票（含大改造）</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="col-3">
+                                    <p class="text-dark ff-nsft fs-6 fw-bold">票價</p>
+                                </th>
+                                <td class="col-3">
+                                    <p class="text-dark text-end ff-nsst fs-6 fw-normal">$8000</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="text-center mb-3 ">
+                <img src="../assets/images/sparkler.png" alt="sparkler" class="booking__img">
+            </div>
+            <h2 class="text-center text-primary ff-nsft fs-4 fw-bold ls-1 mb-3">聯絡人資料</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="#" method="post" class="needs-validation" novalidate>
+                        <div class="input-grop mb-3">
+                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">聯絡人姓名</label>
+                            <input type="text" id="contactName"
+                                class="form-control bg-t border border-2 border-primary py-2 px-3"
+                                aria-describedby="contactName" placeholder="請輸入聯絡人名稱" required>
+                            <div class="invalid-feedback">
+                                請輸入聯絡人姓名
+                            </div>
+                        </div>
+                        <div class="input-grop mb-3">
+                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">Email</label>
+                            <input type="email" id="contactName"
+                                class="form-control bg-t border border-2 border-primary py-2 px-3"
+                                aria-describedby="contactName" placeholder="請輸入Email" required>
+                            <div class="invalid-feedback">
+                                請輸入Email
+                            </div>
+                        </div>
+                        <div class="input-grop mb-3">
+                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">手機</label>
+                            <input type="tel" id="contactName"
+                                class="form-control bg-t border border-2 border-primary py-2 px-3"
+                                aria-describedby="contactName" placeholder="請輸入手機號碼" required>
+                            <div class="invalid-feedback">
+                                請輸入手機
+                            </div>
+                        </div>
+                        <input type="submit"
+                            class="text-white py-2 bg-primary w-100 text-center link-color-ly-hover mb-3 border-0"
+                            value="確認表單資料&raquo;">
+
+                        <a href=" #" class="text-center text-dis d-block mb-60">取消購票</a>
+                    </form>
                 </div>
             </div>
         </div>
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
 </body>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
 
 </html>

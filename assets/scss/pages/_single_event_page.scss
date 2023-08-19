@@ -1,10 +1,19 @@
-*{
-    outline: 1px solid red;
-}
+// * {
+//     outline: 1px solid red;
+// }
 
-.single__event--block{
-    height: 598px;
-    @include phone{
-        height: 204px;
+.time::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    width: 70px;
+    top: 47%;
+    transform: translateX(-50%) rotate(120deg);
+    background-color: black;
+
+    @include tab {
+        width: 50px;
+        top: 47%;
     }
 }

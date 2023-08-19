@@ -67,12 +67,7 @@
 
 .input__hover {
   input::placeholder {
-    font-family: "Noto Sans TC", sans-serif;
-    color: #878787;
-  }
-
-  input:focus::placeholder {
-    color: $ticket-bg;
+    color: #4F4F4F;
   }
 }
 
@@ -84,5 +79,3 @@
   width: 100%;
   aspect-ratio: 1/1;
 }
-
-.time__line {}

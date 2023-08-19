@@ -2,35 +2,81 @@ $ticket-bg: #f3f1e5; //ann
 $primary: #030303; //ann $blue !default;
 $secondary: #fbff22; //ann $gray-600 !default;
 $other: #c96464; //ann
-$dis: #9a9a9a; //ann
+$dis: #4f4f4f; //ann
 
 
 $theme-colors: (
-  "b": $black,//ann
-  "t": $ticket-bg,//ann
-  "other": $other,//ann
-  "dis": $dis, //ann
-)
-$spacers: (
-  6: $spacer * 2,//ann 32
-  7: $spacer * 0.75,//ann 12
-  8: $spacer * 0.875,//ann 14
-  11:$spacer * 0.6875,//ann 11
-  20: $spacer * 1.25,//ann 20
-  25: $spacer * 1.5625,//ann 25
-  30: $spacer * 1.875,//ann 30
-  35: calc(($spacer * 2) + 3px),//ann 35
-  38: calc(($spacer * 2) + 6px),//ann 38
-  40: $spacer * 2.5,//ann 40
-  60: $spacer * 3.75,//ann 60
-  62: $spacer * 3.875,//ann 60
-  96: $spacer * 6,//ann 96
-)
-$font-sizes: (
-  7: $font-size-base * 0.875,//ann 14
-  8: $font-size-base * 1.125,//ann 18
-  9: $font-size-base * 3.75,//ann 60
-  10: $font-size-base * 3,//ann 48
-  11: $font-size-base * 4,//ann 64
-  12: $font-size-base * 1.375,//ann 22
-)
+  "b": $black,
+  //ann
+  "t": $ticket-bg,
+  //ann
+  "other": $other,
+  //ann
+  "dis": $dis,
+  //ann
+  ) $spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    //4
+    2: $spacer * 0.5,
+    //8
+    3: $spacer,
+    //16
+    4: $spacer * 1.5,
+    //24
+    5: $spacer * 3,
+    //48
+    6: $spacer * 2,
+    //ann 32
+    7: $spacer * 0.75,
+    //ann, 12
+    8: $spacer * 0.875,
+    //ann 14
+    9: $spacer * 1.125,
+    //ann 18
+    11:$spacer * 0.6875,
+    //ann 11
+    20: $spacer * 1.25,
+    //ann 20
+    25: $spacer * 1.5625,
+    //ann 25
+    30: $spacer * 1.875,
+    //ann 30
+    35: calc(($spacer * 2) + 3px),
+    //ann 35
+    38: calc(($spacer * 2) + 6px),
+    //ann 38
+    40: $spacer * 2.5,
+    //ann 40
+    60: $spacer * 3.75,
+    //ann 60
+    62: $spacer * 3.875,
+    //ann 60
+    96: $spacer * 6,
+    //ann 96
+    ) $font-sizes: (
+      1: $h1-font-size,
+      //40
+      2: $h2-font-size,
+      //32
+      3: $h3-font-size,
+      //28
+      4: $h4-font-size,
+      //24
+      5: $h5-font-size,
+      //20
+      6: $h6-font-size,
+      //16
+      7: $font-size-base * 0.875,
+      //ann 14
+      8: $font-size-base * 1.125,
+      //ann 18
+      9: $font-size-base * 3.75,
+      //ann 60
+      10: $font-size-base * 3,
+      //ann 48
+      11: $font-size-base * 4,
+      //ann 64
+      12: $font-size-base * 1.375,
+      //ann 22
+      )

@@ -6,13 +6,24 @@ body {
   color: $primary;
   box-sizing: border-box;
 }
+
 img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 a {
   display: block;
   color: $primary;
+}
+
+input::placeholder {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #878787;
+}
+
+input:focus::placeholder {
+  color: $ticket-bg;
 }

@@ -1,0 +1,21 @@
+// * {
+//     outline: 1px solid red;
+// }
+
+.pay__line::before {
+    content: "";
+    position: absolute;
+    width: 83%;
+    height: 1px;
+    background-color: $dark;
+    z-index: -1;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.booking__img {
+    width: 32px;
+    height: 32px;
+}
