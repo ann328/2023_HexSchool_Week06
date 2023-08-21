@@ -90,5 +90,5 @@
 
 .was-validated .form-control:invalid,
 .was-validated .form-control:invalid:focus {
-  border-color: $other;
+  border-color: $other !important;
 }
