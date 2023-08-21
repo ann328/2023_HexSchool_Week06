@@ -87,3 +87,8 @@
 .vh-calc {
   height: calc(100vh - 130px - 93px - 60px);
 }
+
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus {
+  border-color: $other;
+}

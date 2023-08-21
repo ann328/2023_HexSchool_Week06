@@ -19,7 +19,7 @@
             </div>
             <h2 class="text-center text-primary ff-nsft fs-4 fw-bold ls-1 mb-3">會員登入</h2>
             <div class="row">
-                <form action="" method="post">
+                <form action="" method="post" class="needs-validation" novalidate>
                     <div class="col-md-4 mx-auto mb-6">
                         <div class="input-grop mb-3">
                             <label for="account" class="form-label text-dark ff-nsst fs-6 fw-normal">
@@ -28,7 +28,7 @@
                             <input type="text" id="account"
                                 class="form-control bg-t border border-2 border-primary py-2 px-3"
                                 aria-describedby="contactName" placeholder="請輸入帳號" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback ff-nsst fw-7 fw-normal">
                                 請輸入帳號
                             </div>
                         </div>
@@ -39,21 +39,26 @@
                             <input type="password" id="password"
                                 class="form-control bg-t border border-2 border-primary py-2 px-3"
                                 aria-describedby="contactName" placeholder="請輸入密碼" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback ff-nsst fw-7 fw-normal">
                                 請輸入密碼
                             </div>
                         </div>
                     </div>
-                    <!-- <input type="submit"
-                                class="mx-auto  text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
-                                value="登入&raquo;"> -->
-                    <a href="./index.html"
-                        class="col-md-4 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0">登入&raquo;</a>
+                    <div class="col-md-4 mx-auto">
+                        <input type="submit"
+                            class="w-100 text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
+                            value="登入&raquo;">
+                        </input>
+                    </div>
+                    <!-- <a href="./index.html"
+                        class="col-md-4 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0">登入&raquo;</a> -->
                 </form>
             </div>
         </div>
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.0.js"
+                integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
             <script>
                 // Example starter JavaScript for disabling form submissions if there are invalid fields
                 (() => {
@@ -75,6 +80,14 @@
                     })
                 })()
             </script>
+            <!-- <script>
+                $('.needs-validation').each(function (index) {
+                    $(this).on('submit', function (e) {
+                        e.preventDefault();
+                        $(this).addClass('was-validated');
+                    });
+                });
+            </script> -->
 </body>
 
 </html>
