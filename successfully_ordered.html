@@ -9,8 +9,8 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>index</title>
-  <script type="module" crossorigin src="/2023_HexSchool_Week06/assets/main-6b2e60ca.js"></script>
-  <link rel="stylesheet" href="/2023_HexSchool_Week06/assets/main-cf6e244e.css">
+  <script type="module" crossorigin src="/2023_HexSchool_Week06/assets/main-ce08a092.js"></script>
+  <link rel="stylesheet" href="/2023_HexSchool_Week06/assets/main-4f356a9f.css">
 </head>
 
 <body class="bg-t">
@@ -156,7 +156,7 @@
                             <p class="text-dis ff-nsst fs-md-6 fs-7 fw-normal">請輸入您的 <span
                                     class="text-other">身分證字號</span> 供取票使用，外籍人士請輸入 <span class="text-other">護照號碼</span>
                             </p>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback ff-nsst fw-7 fw-normal">
                                 請輸入請輸入身分證字號或護照號碼
                             </div>
                         </div>
@@ -176,12 +176,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <input type="submit"
-                                class="mx-auto  text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
-                                value="確認訂單並繳費 $8000&raquo;"> -->
-                    <a href="./confirmation_of_successful_order.html"
+                    <div class="text-center">
+                        <input type="submit"
+                            class="col-md-4 col-12  text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
+                            value="確認訂單並繳費 $8000&raquo;">
+                    </div>
+                    <!-- <a href="./confirmation_of_successful_order.html"
                         class="col-md-4 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover  border-0 mb-">確認訂單並繳費
-                        $8000&raquo;</a>
+                        $8000&raquo;</a> -->
                 </form>
             </div>
         </div>
@@ -196,21 +198,15 @@
             
 </body>
 <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {
         'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
                 if (!form.checkValidity()) {
                     event.preventDefault()
                     event.stopPropagation()
                 }
-
                 form.classList.add('was-validated')
             }, false)
         })
