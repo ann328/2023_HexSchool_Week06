@@ -9,6 +9,7 @@
 .banner__img--title {
   top: 48px;
   left: 48px;
+
   @include phone {
     top: 16px;
     left: 40px;
@@ -73,20 +74,15 @@
   }
 }
 
-.link-bgc-y-hover {
-  transition: all 1.2s;
 
-  &:hover {
-    background-color: $secondary;
-    border-radius: 50px;
-  }
-}
 .oneline__item--block {
   overflow: hidden;
+
   @include tab {
     min-height: 158px;
   }
 }
+
 .oneline__item--img {
   background-image: url(../images/event/online.jpg);
   background-position: center;
@@ -98,31 +94,39 @@
     transform: scale(1.2);
   }
 }
+
 .activity__item--block {
   height: 274px;
   overflow: hidden;
   z-index: 0;
+
   @include phone {
     height: 267px;
   }
 }
+
 .activity__item--img {
   height: 274px;
   transition: all 1.2s;
+
   &:hover {
     transform: scale(1.2);
   }
+
   &:focus {
     transform: scale(1.2);
   }
+
   @include phone {
     height: 267px;
   }
 }
+
 .activity__item li {
   &:nth-child(2n) {
     transform: rotate(2deg);
   }
+
   &:nth-child(3) {
     transform: rotate(-2deg);
   }

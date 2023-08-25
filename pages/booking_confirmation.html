@@ -88,36 +88,38 @@
                             <input type="text" id="contactName"
                                 class="form-control bg-t border border-2 border-primary py-2 px-3"
                                 aria-describedby="contactName" placeholder="請輸入聯絡人名稱" required>
-                            <div class="invalid-feedback">
+                            <div class="invalid-feedback ff-nsst fw-7 fw-normal">
                                 請輸入聯絡人姓名
                             </div>
                         </div>
                         <div class="input-grop mb-3">
-                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">Email</label>
-                            <input type="email" id="contactName"
+                            <label for="contactEmail" class="form-label text-dark ff-nsst fs-6 fw-normal">Email</label>
+                            <input type="email" id="contactEmail"
                                 class="form-control bg-t border border-2 border-primary py-2 px-3"
-                                aria-describedby="contactName" placeholder="請輸入Email" required>
-                            <div class="invalid-feedback">
+                                aria-describedby="contactEmail" placeholder="請輸入Email" required>
+                            <div class="invalid-feedback ff-nsst fw-7 fw-normal">
                                 請輸入Email
                             </div>
                         </div>
                         <div class="input-grop mb-3">
-                            <label for="contactName" class="form-label text-dark ff-nsst fs-6 fw-normal">手機</label>
-                            <input type="tel" id="contactName"
+                            <label for="contactPhone" class="form-label text-dark ff-nsst fs-6 fw-normal">手機</label>
+                            <input type="tel" id="contactPhone"
                                 class="form-control bg-t border border-2 border-primary py-2 px-3"
-                                aria-describedby="contactName" placeholder="請輸入手機號碼" required>
-                            <div class="invalid-feedback">
+                                aria-describedby="contactPhone" placeholder="請輸入手機號碼" required>
+                            <div class="invalid-feedback ff-nsst fw-7 fw-normal">
                                 請輸入手機
                             </div>
                         </div>
                     </div>
-                    <!-- <input type="submit"
-                                class="mx-auto  text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
-                                value="確認表單資料&raquo;"> -->
-                    <a href="./successfully_ordered.html"
-                        class="col-md-3 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0">確認表單資料&raquo;</a>
+                    <div class="text-center">
+                        <input type="submit"
+                            class="col-md-3 col-12 text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0"
+                            value="確認表單資料&raquo;">
+                    </div>
+                    <!-- <a href="./successfully_ordered.html"
+                        class="col-md-3 mx-auto text-white py-2 bg-primary text-center ff-nsst link-color-ly-hover mb-3 border-0">確認表單資料&raquo;</a> -->
 
-                    <a href="./single_event_page.html" class="text-center text-dis d-block">取消購票</a>
+                    <a href="./single_event_page.html" class="text-center text-dis d-block ff-nsst">取消購票</a>
                 </form>
             </div>
         </div>
@@ -125,14 +127,10 @@
             <script type="module" src="../main.js"></script>
 </body>
 <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+
     (() => {
         'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
                 if (!form.checkValidity()) {

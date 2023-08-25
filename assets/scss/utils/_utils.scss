@@ -92,3 +92,17 @@
 .was-validated .form-control:invalid:focus {
   border-color: $other !important;
 }
+
+
+.link-bgc-y-hover:hover::before {
+  content: "";
+  position: absolute;
+  background: $secondary;
+  border-radius: 50%;
+  width: 29px;
+  height: 29px;
+  z-index: -1;
+  float: left;
+  left: -10px;
+  top: -1px
+}
